@@ -15,7 +15,7 @@ export default function App() {
     const response = await api.get('/advice').then((response) => {
       setAdvice(response.data.slip.advice);
     }).catch((error) => {
-      return error;
+      console.log(error);
     });
     return response 
   }
